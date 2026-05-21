@@ -1,12 +1,12 @@
 <script setup>
-  import { ref, onMounted, onBeforeMount } from 'vue';
+  import { ref, onMounted, onBeforeUnmount } from 'vue';
 
   import { Notyf } from 'notyf';
   import 'notyf/notyf.min.css';
 
   const notyf = new Notyf();
 
-  const WEB3FORMS_ACCESS_KEY = "5e8511d4-dc1d-49c8-949b-7053e83dc82d"
+  const WEB3FORMS_ACCESS_KEY = "133b60de-5998-4652-97ca-51f2e0c9fb5c"
 
   const subject = "New message from Portfolio Contact Form";
 
@@ -17,6 +17,11 @@
   const isLoading = ref(false);
 
   const submitForm = async() => {
+
+    if(!recaptchaToken.value) {
+        notyf.error("Please complete the reCAPTCHA");
+        return;
+    }
 
     isLoading.value = true;
 
@@ -33,7 +38,8 @@
                 subject: subject,
                 name: name.value,
                 email: email.value,
-                message: message.value
+                message: message.value,
+                "g-recaptcha-response": recaptchaToken.value
             })
         });
 
@@ -41,24 +47,24 @@
 
         if(result.success) {
             console.log(result)
-
-            isLoading.value = false;
-            notyf.success("message sent!");
+            notyf.success("Message sent!");
+        } else {
+            notyf.error("Failed to send message");
         }
+
     } catch(error) {
         console.log(error);
+        notyf.error("Failed to send message");
 
-        isLoading.value = false;
-        notyf.error("Failed to send message")
     } finally {
-
+        isLoading.value = false;
         resetRecaptcha();
     }
 }
 
 /*recaptcha integration*/
 
-const SITE_KEY = '6LeuH_UsAAAAAIhD-0kiUNoIxafRxRWF-AsbKPJC';
+const SITE_KEY = '6Lf-LvUsAAAAADJIFEqpdo9nRNRWk6b19F0QFXfn';
 
 const recaptchaContainer = ref(null);
 const recaptchaWidgetID = ref(null);
@@ -97,16 +103,15 @@ onMounted(() => {
     const interval = setInterval(() => {
         if(window.grecaptcha && window.grecaptcha.render) {
             renderRecaptcha();
-            clearInterval(interval)
+            clearInterval(interval);
         }
     }, 100);
 
-    onBeforeMount(() => {
+    onBeforeUnmount(() => {
         clearInterval(interval);
     });
-})
+});
 </script>
-
 
 <template>
   <div id="contact">
@@ -143,17 +148,23 @@ onMounted(() => {
       </div>
 
       <!-- Contact Form -->
-      <form id="contactform">
+      <form id="contactform" @submit.prevent="submitForm">
         <div class="mb-3">
           <p id="cfh">CONTACT FORM</p>
-          <input type="text" class="form-control mb-3" id="contactname" placeholder="Name">
-          <input type="email" class="form-control" id="contactemail" placeholder="Email Address">
+          <input type="text" v-model="name" class="form-control mb-3" placeholder="Name">
+          <input type="email" v-model="email" class="form-control" placeholder="Email Address">
         </div>
         <div class="mb-3">
-          <textarea class="form-control" id="textarea" rows="5" placeholder="Message"></textarea>
+          <textarea v-model="message" class="form-control" id="textarea" rows="5" placeholder="Message"></textarea>
         </div>
+
+        <!-- reCAPTCHA container -->
+        <div ref="recaptchaContainer" class="mb-3"></div>
+
         <div class="mb-3">
-          <button type="submit">SEND MESSAGE</button>
+          <button type="submit" :disabled="isLoading">
+            {{ isLoading ? "SENDING..." : "SEND MESSAGE" }}
+          </button>
         </div>
       </form>
     </div>

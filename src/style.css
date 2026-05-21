@@ -9,6 +9,8 @@
     overflow-x: hidden;
   }
 
+
+
   body {
     padding-top: 50px;
     scroll-behavior: smooth;
@@ -437,6 +439,14 @@
     margin: 0 auto;
     padding: 0 1rem 2rem;
     gap: 0;
+  }
+
+  #contactname, #contactemail, #textarea {
+    color: #E7E5E5;
+  }
+
+  #contactname::placeholder, #contactemail::placeholder, #textarea::placeholder {
+    color: #8FA0B0;
   }
 
   #map {
