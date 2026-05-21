@@ -6,7 +6,7 @@
 
   const notyf = new Notyf();
 
-  const WEB3FORMS_ACCESS_KEY = "133b60de-5998-4652-97ca-51f2e0c9fb5c"
+  const WEB3FORMS_ACCESS_KEY = "818e0628-b9e9-4d7a-8736-a315951a0584"
 
   const subject = "New message from Portfolio Contact Form";
 
