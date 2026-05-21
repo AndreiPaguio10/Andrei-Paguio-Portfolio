@@ -23,6 +23,8 @@
         return;
     }
 
+    console.log("token:", recaptchaToken.value); // ← debug log
+
     isLoading.value = true;
 
     try {
@@ -39,14 +41,14 @@
                 name: name.value,
                 email: email.value,
                 message: message.value,
-                "g-recaptcha-response": recaptchaToken.value
+                // "g-recaptcha-response": recaptchaToken.value  // ← commented out
             })
         });
 
         const result = await response.json();
+        console.log("result:", result); // ← debug log
 
         if(result.success) {
-            console.log(result)
             notyf.success("Message sent!");
         } else {
             notyf.error("Failed to send message");
