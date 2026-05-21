@@ -1,0 +1,790 @@
+/*CSS Reset & navbar padding start*/
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    overflow-x: hidden;
+  }
+
+  body {
+    padding-top: 50px;
+    scroll-behavior: smooth;
+  }
+/*CSS Reset & navbar padding end*/
+
+/*Navbar Start*/
+  nav {
+    background:black;
+  }
+
+  #h, #c {
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 700;
+    font-style: Semi Bold;
+    color: #F7BD48;
+  }
+
+  #am, #p,#t {
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 700;
+    font-style: Semi Bold;
+    color: #8FA0B0;
+  }
+  
+  .navbar-brand {
+    height: 35px;
+    width: 110px;
+  } 
+/*Navbar End*/
+
+/*Landing Start*/
+  #welcome {
+    font-family: Inter;
+    font-weight: 600;
+    font-style: Semi Bold;
+    font-size: 12px;
+    leading-trim: NONE;
+    line-height: 18px;
+    letter-spacing: 4.8px;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #F7BD48;
+  }
+
+  #full {
+    font-family: Manrope;
+    font-weight: 800;
+    font-style: ExtraBold;
+    font-size: 96px;
+    leading-trim: NONE;
+    line-height: 96px;
+    letter-spacing: -4.8px;
+    text-align: center;
+    vertical-align: middle;
+    color: #E7E5E5;
+  }
+
+  #webdev {
+    font-family: Manrope;
+    font-weight: 800;
+    font-style: ExtraBold;
+    font-size: 96px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+    color: #F7BD48;
+  }
+
+  #building, #high {
+    font-family: Inter;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 20px;
+    leading-trim: NONE;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+    color: #8FA0B0 !important;
+  }
+
+  #view {
+    font-family: Inter;
+    font-weight: 700;
+    font-style: Semi Bold;
+    font-size: 12px;
+    leading-trim: NONE;
+    line-height: 16px;
+    letter-spacing: 1.2px;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: black;
+    width: 189.1699981689453;
+    height: 48;
+    padding-top: 16px;
+    padding-right: 40px;
+    padding-bottom: 16px;
+    padding-left: 40px;
+    opacity: 1;
+    background: linear-gradient(135deg, #F7BD48 0%, #E7B03B 100%);
+  }
+
+  #pind {
+    font-family: Inter;
+    font-weight: 700;
+    font-style: Semi Bold;
+    font-size: 12px;
+    leading-trim: NONE;
+    line-height: 16px;
+    letter-spacing: 1.2px;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #8FA0B0;
+    width: 155.5800018310547;
+    height: 50;
+    padding-top: 16px;
+    padding-right: 40px;
+    padding-bottom: 16px;
+    padding-left: 40px;
+    opacity: 1;
+    border-width: 1px;
+    border: 1px solid grey;
+  }
+
+  #landing {
+    height: 95vh;
+    background: linear-gradient(180deg, rgba(14, 14, 14, 0.6) 0%, rgba(14, 14, 14, 0.8) 50%, #0E0E0E 100%), 
+    url(https://lh3.googleusercontent.com/aida-public/AB6AXuCOeaM4ZW7GPgpBJsOXm6ZxiohJgznZoGH4uPF7FhryqaHGSCfe77sHw4JdjNJtJqxACtR4ka3w98uNSiR6fT48Foyyqgo98lz1YnyFU8MryJdky38tbKJAPHccg3Gta5RgWHXD5PgPk0LlieGgiy0tS7HCSBDnQvMd2YMoh_IBVAO-B8vyppSmNQUIS_tvHATT0u6hsaSfBOiKMcikZcbfankuiY_KGXOFiqIradcAVpazC5Bd3wupb16PvPJR4rIIVn7TKOb3Zqk-);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+/*Landing End*/
+
+/*About Me Start*/  
+  #ham {
+    font-family: Manrope;
+    font-weight: 800;
+    font-style: ExtraBold;
+    font-size: 72px;
+    leading-trim: NONE;
+    line-height: 72px;
+    letter-spacing: -3.6px;
+    text-align: center;
+    vertical-align: middle;
+    color: #E7E5E5;
+    padding-top: 1em;
+  }
+
+  #ham1 {
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 12px;
+    leading-trim: NONE;
+    line-height: 16px;
+    letter-spacing: 3.6px;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #8FA0B0;
+  }
+
+  #about {
+    background: #131313;
+  }
+
+  #name {
+    font-family: Manrope;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 30px;
+    leading-trim: NONE;
+    line-height: 36px;
+    letter-spacing: -0.75px;
+    vertical-align: middle;
+    color: #E7E5E5;
+    width: 100%;
+    padding: 40px;
+    background: #1F2020;
+    border-left: 4px solid #F7BD48;
+    margin-bottom: 1em;
+  }
+
+  #des1, #des2, #des3 {
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    leading-trim: NONE;
+    line-height: 19.75px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    color: #ACABAB;
+  }
+
+  #des3 {
+    margin-bottom: 47px;
+  }
+
+  #but2 {
+    font-family: Inter;
+    font-weight: 700;
+    font-style: Semi Bold;
+    font-size: 12px;
+    leading-trim: NONE;
+    line-height: 16px;
+    letter-spacing: 1.2px;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #553C00;
+    width: 247.9499969482422;
+    height: 56;
+    padding-top: 20px;
+    padding-right: 48px;
+    padding-bottom: 20px;
+    padding-left: 48px;
+    opacity: 1;
+    background: #F7BD48;
+    box-shadow: 0px 10px 30px 0px #F7BD4833;
+    margin-bottom: 2em;
+  }
+/*About Me End*/
+
+/*Project Section Start*/
+  #projects {
+    background: #0E0E0E;
+    padding: 40px 0;
+  }
+
+  #hmp {
+    font-family: Manrope;
+    font-weight: 800;
+    font-style: ExtraBold;
+    font-size: 56px;
+    leading-trim: NONE;
+    line-height: 84px;
+    letter-spacing: -1.4px;
+    text-align: center;
+    vertical-align: middle;
+    color: #E7E5E5;
+    margin-top: 1em;
+  }
+
+  #hmp1 {
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 12px;
+    leading-trim: NONE;
+    line-height: 16px;
+    letter-spacing: 3.6px;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #8FA0B0;
+  }
+
+  .card-title {
+    font-family: Manrope;
+    font-weight: 700;
+    font-style: ExtraBold;
+    font-size: 24px;
+    leading-trim: NONE;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+    vertical-align: middle;
+    color: #E7E5E5;
+  }
+
+  .card-text {
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    leading-trim: NONE;
+    line-height: 22.75px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    color: #8FA0B0;
+  }
+
+  .card-body {
+    background: #0E0E0E;
+  }
+
+  .card-number {
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 10px;
+    leading-trim: NONE;
+    line-height: 15px;
+    letter-spacing: 2px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #F7BD48;
+  }
+/*Project Section End*/
+
+/*Tools Section Start*/
+  #tools {
+    background: #131313;
+  }
+
+  #th {
+    padding-top: 1em;
+    font-family: Manrope;
+    font-weight: 800;
+    font-style: ExtraBold;
+    font-size: 96px;
+    leading-trim: NONE;
+    line-height: 96px;
+    letter-spacing: -4.8px;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #E7E5E5;
+  }
+
+  #td1, #td2 {
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    leading-trim: NONE;
+    line-height: 29.25px;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+    color: #8FA0B0;
+  }
+
+  .tool-box {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 35px 0;
+  }
+
+  .tool-box p {
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 10px;
+    leading-trim: NONE;
+    line-height: 15px;
+    letter-spacing: 2px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #8FA0B0;
+  }
+
+  .tool-img {
+    width: 70px;       
+    height: 70px;
+    margin: 0 auto 2px;
+  }
+
+  .tool-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+  }
+
+  #html, #git, #figma, #css, #node, #bootstrap, #express, #autocad, #arduino, #python, #fritzing, #raspberry {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    gap: 0px;
+    opacity: 1;
+  }
+
+  #toolspic {
+    padding-bottom: 3em;
+  }
+/*Tools Section End*/
+
+/*Contact Section Start*/
+  #contact {
+    background: #0E0E0E;  
+  }
+
+  #ch {
+    padding-top: 2em;
+    font-family: Manrope;
+    font-weight: 800;
+    font-style: ExtraBold;
+    font-size: 72px;
+    leading-trim: NONE;
+    line-height: 72px;
+    letter-spacing: -1.44px;
+    text-align: center;
+    vertical-align: middle;
+    color: #E7E5E5;
+  }
+
+  #cd {
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    leading-trim: NONE;
+    line-height: 20px;
+    letter-spacing: 1.4px;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #8FA0B0;
+    padding-bottom: 50px;
+  }
+
+  /* === CONTACT LAYOUT: CSS Grid replaces Bootstrap columns === */
+  .contact-layout-wrapper {
+    display: grid;
+    grid-template-columns: 5fr 3fr 4fr;
+    align-items: stretch;
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1rem 2rem;
+    gap: 0;
+  }
+
+  #map {
+    min-width: 0;
+  }
+
+  #map iframe {
+    display: block;
+    width: 100% !important;
+    max-width: none !important;
+    height: 656px;
+  }
+
+  #mycontact {
+    padding: 145px 48px;
+    background: #131313;
+    min-width: 0;
+  }
+
+  .contact-head {
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 10px;
+    leading-trim: NONE;
+    line-height: 15px;
+    letter-spacing: 2px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #F7BD48;
+  }
+
+  .actual-contact {
+    font-family: Manrope;
+    font-weight: 200;
+    font-style: ExtraLight;
+    font-size: 20px;
+    leading-trim: NONE;
+    line-height: 28px;
+    letter-spacing: -0.5px;
+    vertical-align: middle;
+    color: #E7E5E5;
+  }
+
+  #contactform {
+    padding: 72px 48px 51px;
+    background: #252626;
+    min-width: 0;
+    margin-bottom: 0;
+  }
+
+  #cfh {
+    font-family: Manrope;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 24px;
+    leading-trim: NONE;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+    vertical-align: middle;
+    color: #E7E5E5;
+    margin-bottom: 30px;
+  }
+
+  #contactname, #contactemail {
+    width: 100%;
+    padding-top: 18px;
+    padding-right: 12px;
+    padding-bottom: 18px;
+    padding-left: 12px;
+    opacity: 1;
+    border: 1px solid #474848;
+    background: #252626;
+  }
+
+  #textarea {
+    width: 100%;
+    padding-top: 16px;
+    padding-right: 12px;
+    padding-bottom: 88px;
+    padding-left: 12px;
+    opacity: 1;
+    background: #252626;
+    border: 1px solid #474848;
+  }
+
+  button {
+    width: 100%;
+    max-width: 344px;
+    height: 60px;
+    padding-top: 18px;
+    padding-bottom: 20px;
+    opacity: 1;
+    background: #F7BD48;
+    font-family: Manrope;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 14px;
+    leading-trim: NONE;
+    line-height: 20px;
+    letter-spacing: 1.4px;
+    text-align: center;
+    vertical-align: middle;
+    color: #553C00;
+    border: none;
+    cursor: pointer;
+  }
+
+  /* Stack contact columns on tablet/mobile */
+  @media (max-width: 991px) {
+    .contact-layout-wrapper {
+      grid-template-columns: 1fr;
+    }
+
+    #map iframe {
+      height: 300px;
+    }
+
+    #mycontact {
+      padding: 40px 24px;
+    }
+
+    #contactform {
+      padding: 30px 20px;
+    }
+  }
+/*Contact Section End*/
+
+/*Footer Start*/
+  .my-footer-section {
+    padding: 70px 40px;
+    background: #0E0E0E;
+  }
+
+  .footer-grid {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1px auto 1px 1fr;
+    align-items: center;
+    column-gap: 55px;
+  }
+
+  .footer-left {
+    justify-self: end;
+    width: 320px;
+    text-align: center;
+  }
+
+  .footer-center {
+    justify-self: center;
+    text-align: center;
+  }
+
+  .footer-right {
+    justify-self: start;
+    width: 320px;
+    text-align: center;
+  }
+
+  .footer-logo {
+    width: 170px;
+    height: auto;
+    display: block;
+    margin: 0 auto 22px;
+  }
+
+  .ld1 {
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 2.2;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #8FA0B0;
+    margin: 0 auto;
+    max-width: 320px;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-bottom: 22px;
+  }
+
+  .social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+
+  .social-icons a img {
+    width: 62px;
+    height: 62px;
+    object-fit: contain;
+    display: block;
+  }
+
+  .social-title-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+  }
+
+  .social-title-wrap .line {
+    width: 95px;
+    height: 1px;
+    background: #8FA0B0;
+    display: block;
+  }
+
+  .social {
+    margin: 0;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 15px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #8FA0B0;
+  }
+
+  .vertical-line {
+    width: 1px;
+    height: 140px;
+    background: #8FA0B0;
+  }
+/*Footer End*/
+
+/* ===== RESPONSIVE ===== */
+
+  /* Landing */
+  @media (max-width: 768px) {
+    #full, #webdev {
+      font-size: 48px;
+      line-height: 52px;
+      letter-spacing: -2px;
+    }
+    #building, #high {
+      font-size: 15px;
+    }
+    #view, #pind {
+      padding: 12px 20px;
+      width: auto;
+    }
+  }
+
+  @media (max-width: 480px) {
+    #full, #webdev {
+      font-size: 36px;
+      line-height: 40px;
+    }
+  }
+
+  /* About */
+  @media (max-width: 768px) {
+    #ham {
+      font-size: 48px;
+      line-height: 52px;
+      letter-spacing: -2px;
+    }
+    #name {
+      padding: 20px;
+    }
+  }
+
+  /* Projects */
+  @media (max-width: 768px) {
+    #hmp {
+      font-size: 36px;
+      line-height: 44px;
+      letter-spacing: -1px;
+    }
+  }
+
+  /* Tools */
+  @media (max-width: 768px) {
+    #th {
+      font-size: 48px;
+      line-height: 52px;
+      letter-spacing: -2px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    #th {
+      font-size: 36px;
+      line-height: 40px;
+    }
+  }
+
+  /* Contact heading */
+  @media (max-width: 768px) {
+    #ch {
+      font-size: 48px;
+      line-height: 52px;
+    }
+  }
+
+  /* Footer responsive */
+  @media (max-width: 991px) {
+    .my-footer-section {
+      padding: 40px 16px;
+    }
+    .footer-grid {
+      display: flex !important;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+    .footer-left,
+    .footer-center,
+    .footer-right {
+      width: 100%;
+      max-width: 320px;
+      justify-self: center;
+    }
+    .vertical-line {
+      display: none !important;
+    }
+    .social-icons a img {
+      width: 48px;
+      height: 48px;
+    }
+  }
+
+  /* Global overflow prevention */
+  html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .container-fluid {
+    overflow-x: hidden;
+    padding-left: 0;
+    padding-right: 0;
+  }
